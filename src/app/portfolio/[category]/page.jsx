@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Category = () => {
+const Category = ({params}) => {
+  // console.log("params=============", params);
   return (
-    <div>Category</div>
+    <div>
+      <h1>{params.category}</h1>
+    </div>
   )
 }
 
