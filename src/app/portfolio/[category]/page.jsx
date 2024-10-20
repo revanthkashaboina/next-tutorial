@@ -15,9 +15,20 @@ const getData = (cat) =>{
   return notFound();
 }
 
+export async function generateMetadata({ params }) {
+
+  const post = params.category
+
+  return {
+    title: post,
+    description: post,
+  }
+}
+
 const Category = ({params}) => {
 
   const data = getData(params.category);
+
   return (
     <div className={styles.container}>
       <h1 className={styles.catTitle}>{params.category}</h1>
