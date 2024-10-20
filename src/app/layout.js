@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { Container } from "postcss";
-import { ThemeProvider } from "../../context/ThemeContext";
+import { ThemeProvider } from "../context/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
